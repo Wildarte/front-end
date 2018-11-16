@@ -1,0 +1,30 @@
+/* css personalizado */
+.linhaCinza{
+    background: gray;
+    color: white;
+    font-size: 2em;
+    padding: 10px
+}
+
+.linhaPersonalizada{
+    background: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.borda{
+    border: 1px solid;
+}
+
+.rodape{
+    background-color: #f5eded;
+    border-top: 1px solid #e6dede;
+    color: #000000;
+    padding: 50px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bg-color-padding p{
+    padding: 15px;
+}
