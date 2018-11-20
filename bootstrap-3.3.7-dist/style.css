@@ -28,3 +28,34 @@
 .bg-color-padding p{
     padding: 15px;
 }
+
+.navb, header{
+    
+    
+    margin: 0 auto;
+}
+
+.centro{
+    padding: 1rem!important;
+    margin: 0 auto;
+}
+
+.button{
+    background-color: rgb(255,255,255) transparent;
+}
+
+h4{
+    border-bottom: 1px solid rgb(204, 199, 199);
+}
+
+
+
+/* css para a página treinamento4.html */
+.treinamento4-header{
+    padding-bottom: 0px;
+    border-bottom: 1px solid #999999;
+}
+
+.treinamento4-hr{
+    border: 2px solid #667755;
+}

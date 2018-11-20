@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet" media="all">
+        <link href="style.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+
+        <!-- aqui vamos trabalhar de forma que podemos esconder elementos de acordo com a resolução
+            do monitor 
+            
+            Usamos as seguintes classes do bootstrap:
+
+            visible-xs-block = deixa o conteúdo visívelq quando a resolução é xs
+            visible-ms-block = deixa o conteúdo visível quando a resolução é ms
+            visible-md-block = deixa o conteúdo visível quando a resolução é md
+            hidden-xs = esconde o conteúdo quando a resolução é xs
+            hidden-ms = esconde o conteúdo quando a resolução é ms
+            visible-sm-inline-block = deixa o conteúdo visivel quando a resolução é sm
+            visible-print-block = deixa o conteúdo visivel somente na impressão
+            hidden-print = esconde o conteúdo na impressão
+            
+        -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h1 class="visible-print-block">Visivel somente para impressão</h1>
+                    <h1 class="hidden-print">Visivel somente na página</h1>
+                    <a href="#" class="btn btn-danger hidden-print">Imprimir página</a>
+                </div>
+
+                <div class="col-xs-12 bg-color-padding">
+
+                    <h1>Responsive utilities</h1>
+
+                    <p class="bg-primary visible-xs-block">Você está na resolução xs</p>
+                    <p class="bg-success visible-sm-block">Você está na resolução sm</p>
+                    <p class="bg-danger visible-md-block">Você está na resolução md</p>
+
+                    <a href="#" class="btn btn-default hidden-xs hidden-sm">Access our</a>
+                </div>
+
+                <div class="col-xs-12 bg-color-padding">
+                    <h1>Tipos</h1>
+
+                    <a href="#" class="visible-sm-block visible-md-block btn btn-primary">Block</a>
+                    <a href="#" class="visible-sm-inline visible-md-inline btn btn-success">Inline</a>
+                    <a href="#" class="visible-sm-inline-block visible-md-inline-block btn btn-danger">Inline-block</a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </body>
+</html>
