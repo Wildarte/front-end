@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-xs-12 col-sm- col-md- col-lg-">
+                <form class="form-horizontal">
+                    
+                    <div class="form-group">
+                        <label for="nome" class="col-xs-2 control-label">Nome completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo">Tipo:</label>
+                        <select class="form-control">
+                            <option value="">Pessoa Física</option>
+                            <option value="">Pessoa Juridica</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="check" class="col-xs-2 control-label">Selecione:</label>
+                        <div class="col-xs-10">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="id1" value="1"> 1
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="id2" value="1"> 2
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="id3" value="1"> 3
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Seu email</label>
+                        <div class="col-xs-10">
+                            <p>atendimento@web.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group has-success has-feedback">
+                        <label for="" class="col-xs-2 control-label">Nome completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:">
+
+                            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group has-warning has-feedback">
+                        <label for="" class="col-xs-2 control-label">Nome completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:">
+
+                            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group has-error has-feedback">
+                        <label for="" class="col-xs-2 control-label">Nome completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:">
+
+                            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nome" class="col-xs-2 control-label">Nome completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control input-lg" id="nome" placeholder="Nome:"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nome" class="col-xs-2 control-label">Nome completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control input-sm" id="nome" placeholder="Nome:"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-lg">
+                        <label for="nome" class="col-xs-2 control-label">Nome completo:</label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:"/>
+
+                            <span class="help-block">Texto de ajuda para o campo, exemplo: 111.111.111-11</span>
+                        </div>
+                    </div>
+
+                    <div class=form-group>
+                        <div class="col-xs-offset-2 col-xs-10">
+                            <button type="submit" class="btn btn-default">Enviar formulário</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main"></script>
+</body>
+</html>
