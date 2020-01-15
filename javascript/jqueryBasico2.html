@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jquery Básico 2</title>
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            
+            function clique(){
+                $("#oi").text("Boa tarde");
+            }
+
+            //A função ready significa que será executada quando todos o elementos de html estiverem prontos
+            $(document).ready(function(){
+                $('h1').click(function(){
+                    $(this).css({
+                    "border": "solid 1px red",
+                    "background": "black"
+                    });
+                });
+
+                $("ul li").click(function(){
+                    $(this).css({
+                        "border": "solid 1px red",
+                        "background": "blue",
+                        "color": "#fff",
+                    });
+                });
+
+            });
+
+        </script>
+    </head>
+    <body>
+        <h1 class="text-center">JQuery Básico 2</h1>
+
+        <article id="oi" onclick="clique()">Texto</article>
+
+        <h1>Test</h1>
+        <h1>Test</h1>
+
+       <ul>
+           <li>Item 1</li>
+           <li>Item 2</li>
+           <li>Item 3</li>
+           <li>Item 4</li>
+       </ul> 
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

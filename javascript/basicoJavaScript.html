@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    
+    
+    <title>Básico JavaScript</title>
+</head>
+<body onload="aviso()">
+    
+    <script>
+        var a = 1;
+        var b = 2;
+        document.write("Resultado = " + (a + b));
+
+        function aviso(){
+            alert("Mensagem da função aviso()");
+        }
+
+        function imprime(){
+            window.print();
+        }
+    </script>
+
+    <p>
+        imprimir recibo
+        <button class="btn btn-default" onclick="imprime()">Imprimir</button>
+    </p>
+
+    <script>
+        var caneca = 0;
+        var porcao = 1;
+        document.write("Você tem " + caneca + " caneca. <br>");
+         for(porcar = 1; porcao <= 4;porcao++ ){
+          caneca ++;
+        document.write("Porção, ganhou a " + porcao + "ª caneca. <br>");
+      }
+        document.write("Você tem " + caneca + " canecas.<br>");
+
+        document.write(Date());
+  </script>
+
+</body>
+</html>

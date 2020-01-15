@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Básico JavaScript</title>
+    <script>
+        var citacao = [];
+        citacao[0] = "Rosas são vermelhas";
+        citacao[1] = "Amai vosos inimigos";
+        citacao[2] = "Estrelas são belas";
+        citacao[3] = "Seus olhos são a coisa mais linda";
+        citacao[4] = "O amor está no ar, como o oxigenio";
+
+        var contador = 0;
+
+        function msg(){
+
+            document.getElementById("texto").innerHTML = citacao[contador];
+            contador++;
+
+            if(contador == citacao.length){
+                contador = 0;
+            }
+            setTimeout("msg()", 1000);
+        }
+    </script>
+</head>
+<body onload="msg()">
+    
+    <p id="texto">Gabriel</p>    
+
+</body>
+</html>

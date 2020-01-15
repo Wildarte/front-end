@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+        <style>
+            .thumb{
+                float: left;
+                width: 30%;
+                padding: 1.48%;
+                border: 1px #ccc solid;
+            }
+        </style>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- 1. Add latest jQuery and fancybox files -->
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        
+    </head>
+    <body>
+
+        
+        <div class="page-header">
+          <h1 class="text-center">Fancybox<small> Exemplos</small></h1>
+        </div>
+        
+        <div class="container">
+            <h2>Gallery</h2>
+            <hr>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <a href="img/lamp.jpg" class="thumbnail" data-fancybox="gallery" data-caption="Lâmpada">
+                        <img src="img/lamp.jpg" alt="Imagem de uma lâmpada">
+                    </a>
+                    
+                </div>
+
+                
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <a href="img/hack.png" class="thumbnail" data-fancybox="gallery" data-caption="Hacker">
+                        <img src="img/hack.png" alt="Imagem de movimento hacker">
+                    </a>
+                </div>
+                
+                
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <a href="img/lobo.jpg" class="thumbnail" data-fancybox="gallery" data-caption="<h1>Lobo</h1>Um grande ícone">
+                        <img src="img/lobo.jpg" alt="Imagem de lobo">
+                    </a>
+                </div>
+
+            </div>
+
+            <h2>Vídeos</h2>
+
+            <a href="#myVideo" data-fancybox>
+                <h3 class="text-info">Assista o vídeo</h3>
+            </a>
+            <video width="640" height="320" controls src="" id="myVideo" style="display:none">
+                <source src="https://www.youtube.com/watch?v=Z6WqKS9jXJk" type="mp4">
+            </video>
+            
+        </div>
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

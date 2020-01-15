@@ -1,0 +1,11 @@
+#squad{
+    width: 64px;
+    height: 64px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+table tr td{
+    width: 20px
+    
+}

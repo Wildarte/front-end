@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Alerts e progress bar</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm- col-md- col-lg-">
+                    
+                    <div class="page-header">
+                      <h1>Alerts <small>Elements alerts</small></h1>
+                    </div>
+                    
+                    <div class="alert alert-success">Enviado com sucesso!</div>
+                    <div class="alert alert-warning">Cuidado ao preencher o formulário!</div>
+                    <div class="alert alert-info">Preencha todos os campos</div>
+                    <div class="alert alert-danger">Alguns campos não foram preenchidos</div>
+
+                    <div class="alert alert-danger alert-dismissible">Alguns campos não foram preenchidos
+                        <a href="#" class="alert-link">corretamente</a>
+                        <button class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm- col-md- col-lg-">
+                    
+                    <div class="page-header">
+                      <h1>Progress bar<small>Elementos progress bar</small></h1>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span>60% completo...</span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span>60% completo...</span>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span>60% completo...</span>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span>60% completo...</span>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span>60% completo...</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

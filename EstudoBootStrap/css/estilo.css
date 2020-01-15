@@ -1,3 +1,13 @@
 .linhaCinza{
     background: gray;
 }
+
+body{
+    padding-top: 70px;
+}
+
+.bg-color{
+    background-color: blue;
+    padding: 10px;
+    color: white;
+}

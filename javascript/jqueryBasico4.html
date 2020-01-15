@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JQuery Básico 4</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <style>
+            *{
+                border:0;
+                margin:0;
+                padding:0;
+            }
+            .quadrado, .original{
+                width: 120px;
+                height: 120px;
+                border: 1px #ff0000 dolid;
+                background: #c60;
+                border-radius:12px;
+                float: left;
+                margin-left: 9px;
+                margin-top: 9px;
+            }
+        </style>
+
+        <script>
+            var cont = 0;
+            for (cont = 0; cont < 100; cont++){
+                document.write("<div class='quadrado'></div>")     
+            }
+        </script>
+    </head>
+    <body>
+        
+        <!-- 
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div id="cinco" class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        -->
+        
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('div.quadrado').mouseover(function(){
+                $(this).css({
+                    'cursor': 'pointer',
+                    'background' : '#CCC',
+                    'padding' : '12px',
+                    'width': '120px',
+                    'height': '120px',
+                })
+                .add('p')
+                .html('isto no exciste');
+            });
+
+            $("div.quadrado").mouseout(function(){
+                $(this).css({
+                    'width': '120px',
+                    'height': '120px',
+                    'border': '1px #ff0000 dolid',
+                    'background': '#c60',
+                    'border-radius':'12px',
+                    'float': 'left',
+                    'margin-left': '9px',
+                    'margin-top': '9px',
+                })
+                .add('')
+                .html('');
+            })
+        });
+    </script>
+</html>

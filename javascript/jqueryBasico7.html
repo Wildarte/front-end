@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JQuery Básico 7</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <style>
+            p{
+                background-color: #ccc;
+                padding: 1em;
+                cursor: pointer;
+            }
+            p.over{
+                background-color: #ff0;
+            }
+            span{
+                color: #f00;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p>Passe o mouse </p>
+        <span></span>
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+
+    <script>
+        //bind() serve para anexar comandos
+        $('p').bind('click', function(e){
+            var str = "x="+e.pageX+" e y="+e.pageY;
+            $('span').text("Posição do clique é: "+str)
+        });
+        $('p').bind('dblclick', function(){
+            $('span').text(this.nodeName)
+        });
+        //togleClass() funciona basicamente quando você passa  mouse em cima o elemento passa a ter aquela classe,
+        //quando você tira o mouse ele não tem mais a classe
+        $('p').bind('mouseenter mouseleave', function(){
+            $(this).toggleClass('over');
+        })
+        
+    </script>
+</html>

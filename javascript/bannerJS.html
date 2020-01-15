@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Banner</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script>
+            var banner = ["img/hack.png","img/lamp.jpg","img/lobo.jpg"];
+
+            var alternativo = ["imagem de hack","imagem de lampada","imagem de lobo"];
+
+            var contador = 0;
+
+            function rotativo(){
+                document.images[0].src = banner[contador];
+                document.images[0].alt = alternativo[contador];
+
+                contador++;
+                if(contador == banner.length){
+                    contador = 0;
+                }
+
+                setTimeout("rotativo()", 5000);
+            }
+        </script>
+    </head>
+    <body onload="rotativo()">
+
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-xs-12">
+                    
+                    <div class="page-header">
+                      <h1>Banner <small>com JavaScript</small></h1>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+                        <a href="#" class="thumbnail">
+                            <img/>
+                        </a>
+                    </div>                          
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

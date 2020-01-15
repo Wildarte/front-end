@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <style>
+            section{
+                height: 3000px;
+                border: 1px solid red;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <button id="descer">v</button>
+        <section id="topo">
+            Nao importa o que tem dentro dela
+
+            <p id="mexe">Texto</p>
+        </section>
+
+        <button id="subir">^</button>
+        <span id="rodape"></span>
+
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+
+    <script>
+        $(function(){
+            $("#subir").click(function(){
+                $('html,body').animate({
+                    scrollTop:$('#topo').offset().top
+                    },3000);
+                $("#topo p#mexe").animate({
+                    fontSize: 10
+                    },5000);
+                });
+
+                $("#descer").click(function(){
+                    $('html,body').animate({
+                        scrollTop:$('#rodape').offset().top
+                    },5000);
+                })
+            
+        })
+    </script>
+</html>

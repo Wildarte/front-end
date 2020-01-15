@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="pt-br">
+        <meta name="viewport" content="width=width-device, initial-scale=1.0">
+        <link rel="stylesheet" href="estyle.css" media="all">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                /*
+                A diferença entre html e append é que com html, você elimina tudo que ja tem na página
+                e depois adiciona o que estiver dentro do parenteses.
+                Já o append, ele funciona como um anexo e vai adicioando ao que já existe.
+                */
+                $("body").html("<p>Escrever</p>");
+                $("body").append("<p>Adicinei outro paragrafo</p>");                           
+                $("body").append("<h1>Teste de título</p>");
+                //com o attr você consegue mexer nos atributos da tag, como por exemplo: NAME, ID, CLASS etc.
+                //nesse caso, nós estamos nomeando uma classe.
+                $("p").attr("class","nomeDaClasse");
+                $(".nomeDaClasse").css({
+                    "background": "#FCC",
+                    "line-height": "36px",
+                    "padding": "9px"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                })
+            });      
+        </script>
+        <title>JQuery Básico</title>
+    </head>
+    <body>
+
+        
+
+        <script src="codeJava.js"></script>
+        <script src=""></script>
+    </body>
+</html>

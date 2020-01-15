@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lançador de dados</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="javaScriptlancadorDados.js"></script>
+        <link rel="stylesheet" href="estyle.css">
+    </head>
+    <body onload="carrega()">
+        
+        
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="page-header">
+                    <h1>Lançador de dados <small>com JavaScript</small></h1>
+                  </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 table-responsive">
+                    
+                    <form action="" method="POST" role="form" name="formDado">
+                        <!-- 
+                            <legend>Gerador de valores de um dado</legend>
+                    
+                        <table class="table table-bordered text-center" >
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Número de dados
+                                    </th>
+                                    <th>
+                                        Modificador
+                                    </th>
+                                    <th>
+                                        Resultado
+                                    </th>
+                                    <th>
+
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                         -->
+                                    <input class="" type="text" name="numDados" maxlength="2">
+                                </td>
+                                <td>
+                                    <input class="" type="text" name="modificador" maxlength="2">
+                                </td>
+                                <td>
+                                    <input class="" type="text" name="resultado" maxlength="">
+                                </td>
+                                <td>
+                                    <button type="button" id="lancar" class="btn btn-default" onclick="lanca()">Lançar</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <h3 class="text-info">Resultado:</h3>
+                        <textarea name="" id="areaResult" cols="10" rows="1" readonly class="form-control"></textarea>
+                        
+                    </form>
+                                 
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
