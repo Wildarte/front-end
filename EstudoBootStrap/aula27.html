@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Carousel Bootstrap</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm- col-md- col-lg-">
+                    
+
+                    
+                    <div class="carousel slide" id="carousel01" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel01" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel01" data-slide-to="1"></li>
+                            <li data-target="#carousel01" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/gamer.jpg" alt="imagem de gamer">
+                                <div class="carousel-caption">
+                                    <h3>Título da imagem</h3>
+                                    <p>Texto relativo a imagem</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/image-human-brain_99433-298.jpg" alt="human brain">
+                                <h3>Título da imagem</h3>
+                                <p>Texto descritivo da imagem</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/pexels-photo-414612.jpeg" alt="Pixels Photo">
+                                <h3>Título da imagem</h3>
+                                <p>Texto descritivo da imagem</p>
+                            </div>
+                        </div>
+
+                        <div class="left carousel-control" href="#carousel01" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </div>
+
+                        <div class="right carousel-control" href="#carousel01" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </div>
+                    </div>        
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

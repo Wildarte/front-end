@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tooltips e Popovers</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <h1 class="text-center">Tooltip</h1>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-default ttp" data-toggle="tooltip" data-placement="left" title="tooltip left">
+                Tooltip 1 - left
+            </button>
+
+            
+            <button type="button" class="btn btn-default ttp" data-toggle="tooltip" data-placement="top" title="tooltip top">
+                Tooltip 2 - top
+            </button>
+            
+            
+            <button type="button" class="btn btn-default ttp" data-toggle="tooltip" data-placement="bottom" title="tooltip bottom">
+                Tooltip 3 - bottom
+            </button>
+            
+            
+            <button type="button" class="btn btn-default ttp" data-toggle="tooltip" data-placement="right" title="tooltip right">
+                Tooltip 4 - right
+            </button>
+            
+        </div>
+        
+        <h1>Popover</h1>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="left" 
+            title="tooltip left" data-content="Conteúdo do popover" data-container="body">
+                Popover 1 - left
+            </button>
+
+            
+            <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="top"
+            title="tooltip top" data-content="Conteúdo do popover" data-container="body">
+                Popover 2 - top
+            </button>
+            
+            
+            <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="bottom"
+            title="tooltip bottom" data-content="Conteúdo do popover" data-container="body">
+                Popover 3 - bottom
+            </button>
+            
+            
+            <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="right" 
+            title="tooltip right" data-content="Conteúdo do popover" data-container="body">
+                Popover 4 - right
+            </button>
+            
+        </div>
+
+        
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

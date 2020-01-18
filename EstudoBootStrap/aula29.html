@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Buttons</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1 class="text-center">Buttons</h1>
+
+        <h2>Single Toggle</h2>
+
+        <button type="button" class="btn btn-primary " data-toggle="button">Single Toggle 1</button>
+        <button type="button" class="btn btn-danger" data-toggle="button">Single Toggle 2</button>
+
+        <h2>Checkbox</h2>
+
+        <div class="btn-group" data-toggle="buttons">
+            <label for="" class="btn btn-primary active">
+                <input type="checkbox" checked>Opção 1
+            </label>
+            <label for="" class="btn btn-primary">
+                <input type="checkbox">Opção 2
+            </label>
+            <label for="" class="btn btn-primary">
+                <input type="checkbox">Opção 3
+            </label>
+        </div>
+
+        <h2>Radio Group</h2>
+
+        <div class="btn-group" data-toggle="buttons">
+            <label for="" class="btn btn-primary">
+                <input type="radio" name="btnRadio" id="btnRadio">Opção 1
+            </label>
+            <label for="" class="btn btn-primary">
+                <input type="radio" name="btnRadio" id="btnRadio">Opção 2
+            </label>
+            <label for="" class="btn btn-primary">
+                <input type="radio" name="btnRadio" id="btnRadio">Opção 2
+            </label>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
