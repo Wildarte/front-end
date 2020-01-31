@@ -11,10 +11,9 @@
         <link rel="stylesheet" href="cssFontAwesome/all.css">
         <link rel="stylesheet" href="css/estilo.css" media="all">
         <link rel="stylesheet" href="css/painel.css" media="all">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </head>
 
-    <!-- o seguinte código marca a opção no menu que indica a região da página: data-spy="scroll" data-target=".menu-navegacao"  -->
-    <!-- é o recurso scrollspy -->
     <body>
         
         
@@ -51,7 +50,62 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="col-sm-3">
-                    coluna 1
+                    
+                    <!-- inicio menu lateral gerenciar posts-->
+                    <div class="panel panel-primary">
+                        <div id="colGroup1" role="tab" class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#colListGroup1" aria-controls="colListGroup1" aria-expanded="true"
+                                data-toggle="collapse">
+
+                                    <span class="glyphicon glyphicon-file"></span>
+
+                                    Gerenciar posts
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" role="tabpanel" id="colListGroup1"
+                        aria-expanded="true">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="#" >Criar novo post</a></li>
+                                <li class="list-group-item"><a href="#" >Alterar post</a></li>
+                                <li class="list-group-item"><a href="#" >Excluir post</a></li>
+                            </ul>
+                            <div class="panel-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim menu lateral gerenciar posts-->
+
+                    <!-- inicio menu lateral gerenciar usuários-->
+                    <div class="panel panel-primary">
+                        <div id="colGroup1" role="tab" class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="#colListGroup2" aria-controls="colListGroup2" aria-expanded="true"
+                                data-toggle="collapse">
+
+                                    <span class="glyphicon glyphicon-user"></span>
+
+                                    Gerenciar Usuários
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" role="tabpanel" id="colListGroup2"
+                        aria-expanded="true">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="#" >Criar novo usuário</a></li>
+                                <li class="list-group-item"><a href="#" >Alterar usuário</a></li>
+                                <li class="list-group-item"><a href="#" >Excluir usuário</a></li>
+                            </ul>
+                            <div class="panel-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim menu lateral usuários-->
+
+                    
                 </div>
                 <div class="col-sm-9">
                     coluna 2
@@ -60,7 +114,7 @@
         </div>
         
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
         <script src="js/bootstrap.min.js"></script>
         <script src="js/mycode.js"></script>
     </body>
