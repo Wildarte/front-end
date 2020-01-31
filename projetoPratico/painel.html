@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Devmedia - Painel de controle</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="all">
+        <link rel="stylesheet" href="cssFontAwesome/all.css">
+        <link rel="stylesheet" href="css/estilo.css" media="all">
+        <link rel="stylesheet" href="css/painel.css" media="all">
+    </head>
+
+    <!-- o seguinte código marca a opção no menu que indica a região da página: data-spy="scroll" data-target=".menu-navegacao"  -->
+    <!-- é o recurso scrollspy -->
+    <body>
+        
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Devmedia</a>
+            </div>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fas fa-chart-line fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fas fa-address-book fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fas fa-chart-bar fa-2x"></i></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user fa-2x"></i><b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Minha conta</a></li>
+                            <li><a href="#">Detalhes</a></li>
+                            <li><a href="#">Trocar senha</a></li>
+                            <li><a href="#">Logoff</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="col-sm-3">
+                    coluna 1
+                </div>
+                <div class="col-sm-9">
+                    coluna 2
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mycode.js"></script>
+    </body>
+</html>
